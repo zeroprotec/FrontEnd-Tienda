@@ -193,24 +193,22 @@ body{
     line-height: 6px;
 }
 .card{
+    height: 13rem;
     width: 16rem;
 }
 #card-1{
-    top: 100px;
-    left: 20%;
+    top: 52px;
+    left: 23%;
 }
 #card-2{
-    top: -166px;
-    left: 40%
+    top: -156px;
+    left: 39%
 }
 #card-3{
-    top: -356px;
-    margin-left: 60%;
+    top: -365px;
+    margin-left: 56%;
 }
-#card-4{
-    margin-left: 60%;
-    top: -1px;
-}
+
 
 @media (max-width: 575.98px) { 
     #nav-logo{width: 71px; height: 81px;}
