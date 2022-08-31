@@ -193,22 +193,29 @@ body{
     line-height: 6px;
 }
 .card{
-    height: 13rem;
+    height: 10rem;
     width: 16rem;
 }
 #card-1{
+    border-radius: 10px;
     top: 52px;
     left: 23%;
 }
 #card-2{
-    top: -156px;
-    left: 39%
+    border-radius: 10px;
+    top: -108px;
+    left: 38.9%
 }
 #card-3{
-    top: -365px;
+    border-radius: 10px;
+    top: -268px;
     margin-left: 56%;
 }
-
+#card-4{
+    border-radius: 10px;
+    top: -428px;
+    margin-left: 73%;
+}
 
 @media (max-width: 575.98px) { 
     #nav-logo{width: 71px; height: 81px;}
