@@ -11,15 +11,20 @@ body{
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
     color: #000;
-    margin-left: 100px;
     min-height: 100px;
     min-width: 100px;
 }
 .nav-link{
+    position: relative;
+    right: 15px;
     color: #000;
 }
 .nav-link:hover{
-    color: blue;
+    color: rgb(255, 255, 255);
+}
+.navbar-text{
+    position: relative;
+    left: 350px;
 }
 
 .sidebar{    
@@ -147,7 +152,7 @@ body{
     position: absolute;  
     height: 100%;
     width: calc(100% - 140px);
-    left: 152px;
+    left: 150px;
     top: 20px;
     transition: all 0.5s ease;
   }
@@ -172,10 +177,9 @@ body{
 }
 #black-bell ,#icon-search {
     color: #000;
-    font-size: 20px;
-    padding-top: 15px;
-    padding-right:30px;
-    
+    font-size: 22px;
+    padding-top: 13px;
+    padding-right:23px;    
 }
 #profile{
     margin-top: 11px;
@@ -188,7 +192,9 @@ body{
     outline: none;
 }
 #head-1{
-    font-size: 15px;
+    position: relative;
+    left: 315px;
+    font-size: 13px;
     font-weight: 100;
     line-height: 6px;
 }
@@ -225,9 +231,9 @@ background: #BFBFBF;
 border: 1px solid #E6EDFF;
 border-radius: 12px;
 }
-.divider{
+.divider-1{
 position: relative;
-top: -47px;
+top: -50px;
 left: -160px;
 width: 102px;
 height: 0px;
@@ -235,7 +241,27 @@ height: 0px;
 border: 1px solid #F2F2F2;
 transform: rotate(90deg);
 }
+.divider-2{
+position: relative;
+top: -205px;
+left: 76px;
+width: 102px;
+height: 0px;
+/* Border */
+border: 1px solid #F2F2F2;
+transform: rotate(90deg);
+}
 
+.divider-3{
+position: relative;
+top: -357px;
+left: 315px;
+width: 102px;
+height: 0px;
+/* Border */
+border: 1px solid #F2F2F2;
+transform: rotate(90deg);
+}
 #card-1{
     background: transparent;
     box-sizing: border-box;
@@ -254,14 +280,14 @@ transform: rotate(90deg);
     position: relative;
     background: transparent;
     box-sizing: border-box;
-    top: -246px;
+    top: -280px;
     margin-left: 57.5%;
 }
 #card-4{
     position: relative;
     background: transparent;
     box-sizing: border-box;
-    top: -370px;
+    top: -435px;
     margin-left: 76%;
 }
 .card-text-1{
@@ -275,6 +301,10 @@ transform: rotate(90deg);
     font-weight: 700;
     margin: 1px -5px;
 }
+.card-text{
+    position: relative;
+    top: -40px;
+}
 .icon{
     color: #347AE2;
     position: relative;
@@ -287,6 +317,22 @@ transform: rotate(90deg);
     box-shadow: 1px 0px 10px rgba(124, 141, 181, 0.491);
     border-radius: 12px;
     text-align:center;
+}
+#icon-down{
+    color: #D12830;
+    font-size: 25px;
+    top: -50px;
+}
+#icon-up{
+    color: #4EC052;
+    font-size: 25px;
+    top:-50px;
+}
+#text-down{
+    position: relative;
+    font-size: 18px;
+    top: -55px;
+    left: 10px;
 }
 
 @media (max-width: 575.98px) { 
