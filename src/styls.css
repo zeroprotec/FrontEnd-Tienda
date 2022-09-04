@@ -1,7 +1,7 @@
 body{
     /* Walpaper dashboard */
     background-image: url(/Images/wallpaper_background.jpg);
-    background-size: 1920px;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -9,11 +9,12 @@ body{
     width: 100%;
     overflow: hidden;
 }
+
 .navbar{
-    background: #0D0D0D;
+    background: transparent;
     font-family: 'Titillium Web', sans-serif;
     font-size: 25px;
-    color: #fff;
+    color: #0D0D0D;
     min-height: 100px;
     min-width: 100px;
 }
@@ -181,7 +182,7 @@ body{
     font-size: 30px;
 }
 #black-bell ,#icon-search {
-    color: #fff;
+    color: #0D0D0D;
     font-size: 22px;
     padding-top: 13px;
     padding-right:35px;    
@@ -339,6 +340,18 @@ transform: rotate(90deg);
     top: -55px;
     left: 10px;
 }
+.card-2{
+    position: relative;
+    width: 1362px;
+    height: 360px;
+    top: -490px;
+    left: 330px;
+    background: #BFBFBF;
+    /* Border */
+    border-radius: 12px;
+    border: 1px solid #E6EDFF;
+}
+
 
 @media (max-width: 575.98px) { 
     body{

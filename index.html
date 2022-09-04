@@ -5,6 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Hoja de estilos CSS -->
     <link rel="stylesheet" href="/src/styls.css">
 
     <!-- Bootstrap CSS -->
@@ -43,7 +45,7 @@
                             <ion-icon name="search-outline"></ion-icon>
                         </li>
                         <li class="nav-item" id="black-bell">
-                                <ion-icon name="notifications-sharp"></ion-icon>
+                            <ion-icon name="notifications-sharp"></ion-icon>
                         </li>
                         <li class="nav-item">
                             <a class="nav-item"><img src="/Images/profile.jpg" alt="" id="profile"></a>
@@ -59,7 +61,9 @@
             </div>
         </nav>
     </header>
+
     <!-- Sidebar -->
+
     <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
@@ -81,7 +85,7 @@
 
         <ul class="nav_list">
             <li>
-                <a href="/pestañas_nav/productos.html">
+                <a href="">
                     <i>
                         <ion-icon name="briefcase-outline"></ion-icon>
                     </i>
@@ -90,7 +94,7 @@
                 <span class="tooltip_hs">Productos</span>
             </li>
             <li>
-                <a href="/pestañas_nav/proveedores.html">
+                <a href="">
                     <i>
                         <ion-icon name="newspaper-outline"></ion-icon>
                     </i>
@@ -154,74 +158,99 @@
     <!-- Secion datos -->
     <section class="cards">
         <div class="card-body-1"></div>
-    <div class="container-card">
-        <div class="card border-0" id="card-1">
-            <div class="card-body">
-                <div class="card-text-1">
-                    <h2 class="card-title">89,011</h2>
-                    <div class="icon">
-                        <i class="icon-1"><ion-icon name="people-outline"></ion-icon></i>
+        <div class="container-card">
+            <div class="card border-0" id="card-1">
+                <div class="card-body">
+                    <div class="card-text-1">
+                        <h2 class="card-title">89,011</h2>
+                        <div class="icon">
+                            <i class="icon-1">
+                                <ion-icon name="people-outline"></ion-icon>
+                            </i>
+                        </div>
+                        <p class="card-text">Total Usuarios</p>
+                        <i class="card-text" id="icon-up">
+                            <ion-icon name="trending-up-outline"></ion-icon>
+                        </i>
+                        <i class="card-text" id="text-down">*Dato</i>
                     </div>
-                    <p class="card-text">Total Usuarios</p>
-                    <i class="card-text" id="icon-up"><ion-icon name="trending-up-outline"></ion-icon></i>
-                    <i class="card-text" id="text-down">*Dato</i>
+                </div>
+            </div>
+            <hr class="divider-1">
+            <div class="card border-0" id="card-2">
+                <div class="card-body">
+                    <div class="card-text-1">
+                        <h2 class="card-title">00,000</h2>
+                        <div class="icon">
+                            <i class="icon-2">
+                                <ion-icon name="briefcase-outline"></ion-icon>
+                            </i>
+                        </div>
+                        <p class="card-text">Total Porductos</p>
+                        <i class="card-text" id="icon-down">
+                            <ion-icon name="trending-down-outline"></ion-icon>
+                        </i>
+                        <i class="card-text" id="text-down">*Dato</i>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider-2">
+            <div class="card border-0" id="card-3">
+                <div class="card-body">
+                    <div class="card-text-1">
+                        <h2 class="card-title">00,000</h2>
+                        <div class="icon">
+                            <i class="icon-3">
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </i>
+                        </div>
+                        <p class="card-text">Proveedores</p>
+                        <i class="card-text" id="icon-down">
+                            <ion-icon name="trending-down-outline"></ion-icon>
+                        </i>
+                        <i class="card-text" id="text-down">*Dato</i>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider-3">
+            <div class="card border-0" id="card-4">
+                <div class="card-body">
+                    <div class="card-text-1">
+                        <h2 class="card-title">00,000</h2>
+                        <div class="icon">
+                            <i class="icon-4">
+                                <ion-icon name="arrow-redo-outline"></ion-icon>
+                            </i>
+                        </div>
+                        <p class="card-text">Ventas</p>
+                        <i class="card-text" id="icon-up">
+                            <ion-icon name="trending-up-outline"></ion-icon>
+                        </i>
+                        <i class="card-text" id="text-down">*Dato</i>
+                    </div>
                 </div>
             </div>
         </div>
-        <hr class="divider-1">
-        <div class="card border-0" id="card-2">
-            <div class="card-body">
-                <div class="card-text-1">
-                    <h2 class="card-title">00,000</h2>
-                    <div class="icon">
-                        <i class="icon-2"><ion-icon name="briefcase-outline"></ion-icon></i>
-                    </div>
-                    <p class="card-text">Total Porductos</p>
-                    <i class="card-text" id="icon-down"><ion-icon name="trending-down-outline"></ion-icon></i>
-                    <i class="card-text" id="text-down">*Dato</i>
-                </div>
-            </div>
-        </div>
-        <hr class="divider-2">
-        <div class="card border-0" id="card-3">
-            <div class="card-body">
-                <div class="card-text-1">
-                    <h2 class="card-title">00,000</h2>
-                    <div class="icon">
-                        <i class="icon-3"><ion-icon name="checkmark-circle-outline"></ion-icon></i>
-                    </div>
-                    <p class="card-text">Proveedores</p>
-                    <i class="card-text" id="icon-down"><ion-icon name="trending-down-outline"></ion-icon></i>
-                    <i class="card-text" id="text-down">*Dato</i>
-                </div>
-            </div>
-        </div>
-        <hr class="divider-3">
-        <div class="card border-0" id="card-4">
-            <div class="card-body">
-                <div class="card-text-1">
-                    <h2 class="card-title">00,000</h2>
-                    <div class="icon">
-                        <i class="icon-4"><ion-icon name="arrow-redo-outline"></ion-icon></i>
-                    </div>
-                    <p class="card-text">Ventas</p>
-                    <i class="card-text" id="icon-up"><ion-icon name="trending-up-outline"></ion-icon></i>
-                    <i class="card-text" id="text-down">*Dato</i>
-                </div>
-            </div>
-        </div>
-    </div>
     </section>
-
-
-    <script>
+    <!-- Graficos y Stats-->
+    <div class="card-2">
+        <div class="card-body-2">
+            <p>hola</p>
+        </div>
+      </div>
+      <canvas class="rec1">
+        <canvas class="contenido">
+            
+        </canvas>
+    </canvas>
+        <script>
         let btn = document.querySelector("#btn");
         let sidebar = document.querySelector(".sidebar");
 
         btn.onclick = function () {
-            sidebar.classList.toggle("active");
+        sidebar.classList.toggle("active");
         }
-    </script>
+        </script>
 
     <!-- Boostrap 4 Requerimientos-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
