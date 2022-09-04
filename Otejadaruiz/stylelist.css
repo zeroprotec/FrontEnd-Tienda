@@ -1,0 +1,12 @@
+body{
+    background-size: cover;
+}
+table{
+    margin: 10px;
+    margin-left: 90px;
+    margin-right: auto; 
+    width: 50px;
+}
+thead{
+    color: #eead00;
+}
