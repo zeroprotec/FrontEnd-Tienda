@@ -1,25 +1,33 @@
 body{
     /* Walpaper dashboard */
     background-image: url(/Images/wallpaper_background.jpg);
-    background-size: 1290px;
+    background-size: 1920px;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 .navbar{
+    background: #0D0D0D;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-    color: #000;
-    margin-left: 100px;
+    font-size: 25px;
+    color: #fff;
     min-height: 100px;
     min-width: 100px;
 }
 .nav-link{
-    color: #000;
+    position: relative;
+    right: 15px;
+    color: #fff;
 }
 .nav-link:hover{
-    color: blue;
+    color: rgb(255, 255, 255);
+}
+.navbar-text{
+    position: relative;
+    left: 35%;
 }
 
 .sidebar{    
@@ -30,18 +38,19 @@ body{
     height: 100%;
     width: 85px;
     color: #fff;
-    background: #000;
+    background: #0D0D0D;
     transition: all 0.5s ease;
 }
 .sidebar.active{
     width: 240px;
 }
 .sidebar .logo_content .logo{
-    display: flex;
-    height: 60px;
+    position: relative;
+    display:flex ;
+    top: 35px;
     width: 100%;
     margin-left: 35px;
-    margin-bottom: 35px;
+    margin-bottom: 130px;
     align-items: center;
     opacity: 0;
     pointer-events: none;
@@ -51,7 +60,7 @@ body{
 }
 .logo_content .logo .logo_sup{
     font-size: 20px;
-    margin-right: 9px;
+    margin-right: 10px;
 }
 .logo_content .logo .logo_name{
     font-size: 20px;
@@ -62,9 +71,9 @@ body{
 }
 .sidebar #btn{
     position: absolute;
-    color: rgb(166, 172, 211);
-    left: 39%;
-    top: 15px;
+    color: #BFBFBF;
+    left: 40%;
+    top: 29px;
     font-size: 20px;
     height: 50px;
     width: 30px;
@@ -74,9 +83,6 @@ body{
 .sidebar.active #btn{
     left: 82%;
 }
-.sidebar ul{
-    margin-top: 20px;
-}
 .sidebar ul li{
     font-size: 20px;
     height: 50px;
@@ -84,8 +90,12 @@ body{
     margin: 10px -15px;
     width: 100%;
     list-style: none;
-    line-height: 10px;
+    line-height: 50px;
     text-decoration: none;
+}
+.sidebar_footer{
+    position: relative;
+    padding-top: 300px;
 }
 .sidebar ul li a{
     color: #fff;
@@ -139,7 +149,7 @@ body{
 
 }
 .sidebar ul li:hover .tooltip_hs{
-    transition: all 0.5s 10px ease;
+    transition: all 0.5s ease;
     opacity: 1;
     top: 40%;
 }
@@ -147,7 +157,7 @@ body{
     position: absolute;  
     height: 100%;
     width: calc(100% - 140px);
-    left: 152px;
+    left: 150px;
     top: 20px;
     transition: all 0.5s ease;
   }
@@ -171,11 +181,10 @@ body{
     font-size: 30px;
 }
 #black-bell ,#icon-search {
-    color: #000;
-    font-size: 20px;
-    padding-top: 15px;
-    padding-right:30px;
-    
+    color: #fff;
+    font-size: 22px;
+    padding-top: 13px;
+    padding-right:35px;    
 }
 #profile{
     margin-top: 11px;
@@ -188,32 +197,170 @@ body{
     outline: none;
 }
 #head-1{
-    font-size: 15px;
+    position: relative;
+    left: 625px;
+    font-size: 13px;
     font-weight: 100;
     line-height: 6px;
 }
+.cards{
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+.container-card{
+    position: relative;
+    top: -140px;
+}
 .card{
-    width: 16rem;
+    width: 200px;
+    height: 120px;
+}
+
+.card-body-1{
+box-sizing: border-box;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 20px;
+gap: 3px;
+position:relative;
+width: 85rem;
+height: 132px;
+left: 300px;
+top: 12px;
+/* White */
+background: #BFBFBF;
+/* Border */
+border: 1px solid #E6EDFF;
+border-radius: 12px;
+}
+.divider-1{
+position: relative;
+top: -50px;
+left: -315px;
+width: 102px;
+height: 0px;
+/* Border */
+border: 1px solid #F2F2F2;
+transform: rotate(90deg);
+}
+.divider-2{
+position: relative;
+top: -205px;
+left: 20px;
+width: 102px;
+height: 0px;
+/* Border */
+border: 1px solid #F2F2F2;
+transform: rotate(90deg);
+}
+
+.divider-3{
+position: relative;
+top: -357px;
+left: 365px;
+width: 102px;
+height: 0px;
+/* Border */
+border: 1px solid #F2F2F2;
+transform: rotate(90deg);
 }
 #card-1{
-    top: 100px;
+    background: transparent;
+    box-sizing: border-box;
+    top: 26px;
     left: 20%;
+
 }
 #card-2{
-    top: -166px;
-    left: 40%
+    position: relative;
+    background: transparent;
+    box-sizing: border-box;
+    top: -128px;
+    left: 37%
 }
 #card-3{
-    top: -356px;
-    margin-left: 60%;
+    position: relative;
+    background: transparent;
+    box-sizing: border-box;
+    top: -280px;
+    left: 55%;
 }
 #card-4{
-    margin-left: 60%;
-    top: -1px;
+    position: relative;
+    background: transparent;
+    box-sizing: border-box;
+    top: -435px;
+    left: 72%;
+}
+.card-text-1{
+    color: #292929;
+    position: relative;
+    top: -15px;
+    text-align: left;
+}
+.card-title{
+    position: relative;
+    font-weight: 700;
+    margin: 1px -5px;
+}
+.card-text{
+    position: relative;
+    top: -40px;
+}
+.icon{
+    color: #347AE2;
+    position: relative;
+    left: 130px;
+    top: -40px;
+    font-size: 24px;
+    width: 34px;
+    height: 35px;
+    /* Shadow */
+    box-shadow: 1px 0px 10px rgba(124, 141, 181, 0.491);
+    border-radius: 12px;
+    text-align:center;
+}
+#icon-down{
+    color: #D12830;
+    font-size: 25px;
+    top: -50px;
+}
+#icon-up{
+    color: #4EC052;
+    font-size: 25px;
+    top:-50px;
+}
+#text-down{
+    position: relative;
+    font-size: 18px;
+    top: -55px;
+    left: 10px;
 }
 
 @media (max-width: 575.98px) { 
-    #nav-logo{width: 71px; height: 81px;}
+    body{
+        width: 412px;
+        height: 800px;
+        background-size: 412px 800px;
+    }
+    .navbar{
+        min-width: 50px;
+        min-height: 50px;
+    }
+    .nav-link{
+        right: 1px;
+    }
+    .navbar-text{
+        left: 20%;
+    }
+    .sidebar{
+        font-size: 10px;
+        line-height: 10px;
+    }
+
 }
 
 @media (max-width: 767.98px) {}
