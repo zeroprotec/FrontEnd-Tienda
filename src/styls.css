@@ -1,22 +1,13 @@
-html{
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
-}
 body{
+    /* Walpaper dashboard */
     background-image: url(/Images/wallpaper_background.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position-x:top;
-    top: -1000px;
-}
-/* Scroll Personalizado */
-body::-webkit-scrollbar{
-    width: 10px;
-}
-body::-webkit-scrollbar-thumb{
-    background: #347AE2;
-    border-radius: 20px;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
 .navbar{
@@ -41,7 +32,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .sidebar{    
-    position:fixed;
+    position: fixed;
     top: 0px;
     left: -10px;
     padding: 10px 0px;
@@ -50,18 +41,17 @@ body::-webkit-scrollbar-thumb{
     color: #fff;
     background: #0D0D0D;
     transition: all 0.5s ease;
-    z-index: 3;
 }
 .sidebar.active{
     width: 240px;
 }
 .sidebar .logo_content .logo{
     position: relative;
-    display:flex;
+    display:flex ;
     top: 35px;
     width: 100%;
     margin-left: 35px;
-    margin-bottom: 70px;
+    margin-bottom: 130px;
     align-items: center;
     opacity: 0;
     pointer-events: none;
@@ -209,7 +199,7 @@ body::-webkit-scrollbar-thumb{
 }
 #head-1{
     position: relative;
-    left: 615px;
+    left: 625px;
     font-size: 13px;
     font-weight: 100;
     line-height: 6px;
@@ -351,46 +341,18 @@ transform: rotate(90deg);
     left: 10px;
 }
 .card-2{
-    background: #BFBFBF;
     position: relative;
     width: 1362px;
-    height: 610px;
+    height: 360px;
     top: -490px;
     left: 330px;
+    background: #BFBFBF;
     /* Border */
     border-radius: 12px;
+    border: 1px solid #E6EDFF;
 }
 
-#myChart{
-    position: relative;
-    top: 50px;
-    align-self: center;
-}
-#btn-chart{
-    position: relative;
-    top:60px;
-}
-#btn-2{
-    width: 112px;
-}
-footer{ 
-    position: absolute;
-    left: 75px;
-    height: 200px;
-    width: 1835px;
-    background: #292929;
-}
-.iconos-footer{
-    top: 80px;
-    position: relative;
-    font-size: 30px;
-}
-.text-footer{
-    color: #F2F2F2;
-    top: 80px;
-    position: relative;
-    position: relative;
-}
+
 @media (max-width: 575.98px) { 
     body{
         width: 412px;

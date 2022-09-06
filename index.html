@@ -5,8 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Chart.js Graficos -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    
     <!-- Hoja de estilos CSS -->
     <link rel="stylesheet" href="/src/styls.css">
 
@@ -68,9 +67,13 @@
     <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
+                <i>
+                    <ion-icon name="logo-amazon" class="logo_sup"></ion-icon>
+                </i>
                 <div class="logo_name" class="nav-link">
                     Tienda Virtual
                 </div>
+
             </div>
             <i>
                 <ion-icon name="menu-outline" id="btn"></ion-icon>
@@ -140,7 +143,7 @@
                     <span class="tooltip_hs">Ayuda</span>
                 </li>
                 <li>
-                    <a href="/login.html">
+                    <a href="">
                         <i>
                             <ion-icon name="log-out-outline" id="logo_out"></ion-icon>
                         </i>
@@ -151,7 +154,7 @@
             </ul>
         </div>
     </div>
-    <br><br>
+
     <!-- Secion datos -->
     <section class="cards">
         <div class="card-body-1"></div>
@@ -229,99 +232,26 @@
             </div>
         </div>
     </section>
-    <br><br><br><br><br>
     <!-- Graficos y Stats-->
-    <div class="card-2" name="card2">
-        <div class="card-body-2">
-            <div class="container" id="contenedor">
-                <canvas id="myChart" width="7" height="3"></canvas>
-            </div>
-            <div class="container text-center">
-                <div class="btn" id="btn-chart">
-                    <a href="#card2" class="btn btn-secondary btn-lg"
-                        onclick="changeChart('rgb(52,122,226)','Compras',[50, 60, 20, 30, 10, 100, 40, 25,30,70,10,90])">Compras</a>
-                    <a href="#card2" class="btn btn-info btn-lg"
-                        onclick="changeChart('rgb(143, 9, 9)','Ventas',[40, 50, 10, 70, 30, 100, 40, 25,20,70,80,90])">Ventas</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br><br><br><br>
     <div class="card-2">
         <div class="card-body-2">
-            <div class="container text-center">               
-            </div>
+            <p>hola</p>
         </div>
-
-    </div>
-
-    <script>
-        const ctx = document.getElementById('myChart');
-        const myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ["enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
-                         "Octubre", "Noviembre", "Diciembre"
-                 ],
-                datasets: [{
-                    label: 'Compras',
-                    data: [50, 60, 20, 30, 10, 100, 40, 25, 30, 70, 10, 90],
-                    backgroundColor: [
-                        'rgb(52,122,226)',
-                    ],
-                    borderColor: [
-                        'rgb(52,122,226)',
-                    ],
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        function changeChart(color,label,data) {
-            myChart.data.datasets[0].backgroundColor = color;
-            myChart.data.datasets[0].borderColor = color;
-            myChart.data.datasets[0].label = label;
-            myChart.data.datasets[0].data = data;
-            myChart.update();
-
-        }
-    </script>
-
-    <footer>
-        <div class="iconos-footer  container text-center">
-            <a href="">
-                <ion-icon name="logo-twitter"> </ion-icon>
-            </a>
-            <a href="">
-                <ion-icon name="logo-facebook"> </ion-icon>
-            </a>
-            <a href="">
-                <ion-icon name="logo-gitlab"> </ion-icon>
-            </a>
-            <a href="">
-                <ion-icon name="logo-instagram"> </ion-icon>
-            </a>
-        </div>
-        <div class="text-footer container text-center">
-            <p>Tienda Virtual -Copyright all rights reservedt 2022</p>
-        </div>
-    </footer>
-    <!-- Animaciones Sidebar script -->
-    <script>
+      </div>
+      <canvas class="rec1">
+        <canvas class="contenido">
+            
+        </canvas>
+    </canvas>
+        <script>
         let btn = document.querySelector("#btn");
         let sidebar = document.querySelector(".sidebar");
 
         btn.onclick = function () {
-            sidebar.classList.toggle("active");
+        sidebar.classList.toggle("active");
         }
-    </script>
+        </script>
+
     <!-- Boostrap 4 Requerimientos-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
