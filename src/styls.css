@@ -360,7 +360,7 @@ transform: rotate(90deg);
     /* Border */
     border-radius: 12px;
 }
- /* Estilos del grafico */
+
 #myChart{
     position: relative;
     top: 50px;
