@@ -1,0 +1,136 @@
+html{
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    background-image: url(/Images/wallpaper_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x:top;
+    top: -1000px;
+}
+#logo-sup{
+    position: relative;
+    top: -15px;
+}
+#text-sup{
+    margin-bottom: 30px;
+}
+.form1{
+    position: relative;
+    align-items: center;
+    align-self: center;
+}
+.form1{
+    left: 36%;
+    top: 100px;
+}
+.form1{
+    height: 740px;
+    width: 500px;
+    border-radius: 35px;
+    background: #fff;
+    box-shadow:2px 2px 20px 10px  rgba(0, 0, 0, 0.109);
+}
+#cont{
+    position: relative;
+    left: -15px;
+    width: 430px;
+}
+#contend{
+    position: relative;
+    top: 60px;
+}
+#contenedor{
+    position: relative;
+    top: -9px;
+    left: 20px; 
+}
+.icon{
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.icon-1{
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.contend2{
+    position: relative;
+    color: #fff;
+    border-end-end-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 45px;
+    height: 48px;
+    margin-bottom: -20px;
+    background-color: #000;
+    top: -48px;
+    left: 355px;
+}
+.contend3{
+    position: relative;
+    border-end-end-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-bottom: -20px;
+    width: 45px;
+    height: 48px;
+    background-color: #000;
+    top: -48px;
+    left: 355px;
+}
+.contend4{
+    color: #fff ;
+    position: relative;
+    border-end-end-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-bottom: -48px;
+    width: 45px;
+    height: 48px;
+    background-color: #000;
+    top: -48px;
+    left: 355px;
+}
+.contend5{
+    color: #fff ;
+    position: relative;
+    border-end-end-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-bottom: -40px;
+    width: 45px;
+    height: 48px;
+    background-color: #000;
+    top: -67px;
+    left: 370px;
+}
+#form2{
+    width: 125px;
+    position: relative;
+    top: 28px;
+}
+#form3{
+    position: relative;
+    width: 305px;
+    top: -20px;
+    left: 110px;
+}
+.btn{
+    position: relative;
+    width: 400px;    
+
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+.sign-in{
+    color: #000;
+    transition: all 0.4s ease;
+}
+.sign-in:hover{
+    text-decoration:none;
+    color: #0D8CDB;
+}
