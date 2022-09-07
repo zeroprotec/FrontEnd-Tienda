@@ -1,3 +1,8 @@
+html{
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
 body{
     background-image: url(/Images/wallpaper_background.jpg);
     background-position: center;
@@ -5,9 +10,15 @@ body{
     position: relative;
     min-height: 100vh;
     width: 100%;
-    overflow: auto;
 }
-
+/* Scroll Personalizado */
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background: #347AE2;
+    border-radius: 20px;
+}
 .navbar{
     background: transparent;
     font-family: 'Titillium Web', sans-serif;
