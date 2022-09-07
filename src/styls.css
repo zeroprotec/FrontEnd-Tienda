@@ -391,6 +391,9 @@ footer{
     position: relative;
     position: relative;
 }
+
+/* Clases Resposive */
+
 @media (max-width: 575.98px) { 
     body{
         width: 412px;
