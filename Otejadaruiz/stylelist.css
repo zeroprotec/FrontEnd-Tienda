@@ -224,25 +224,21 @@ body::-webkit-scrollbar-thumb{
     border-radius: 20px;
 }
 .search{
-    width: 80%;
-    margin: 40px auto;
+    margin: 20px auto;
+    width: 85%;
 }
 
 /*Edicion de Tabla*/
-.btn-agg{
-    border-radius: 5px;
-    font-size: 20px;
-    background: #fff;
-    width: 40%;
-  }
 
 thead{
     color: #eeab00;
 }
 
-.bordesup{
-    color: #ededed; 
-    margin: 20px; 
+
+.bordesup{ 
+    margin: 10px 50px;
+    float: right;
+    color: #ededed;
 }
 
 .bordeinf{
