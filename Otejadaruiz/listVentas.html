@@ -154,16 +154,20 @@
         <!--Buscar o filltrar-->
         <div class="search">
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><ion-icon name="search"></ion-icon></button>
-              </form>
+                <input class="form-control col-10 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0" type="submit"><ion-icon name="search"></ion-icon></button>
+                <button class="btn my-2 my-sm-0" type="submit"><i class="fa-solid fa-filter"></i></button>
+                <button class="btn btn-warning btn-lg">
+                    <ion-icon name="bag-add"></ion-icon>
+                </button>
+            </form>
         </div>
         <!--Tabla-->
         <div class="contenido">
             <div class="bordesup">
-                borde
+                hola
             </div>
-            <table class="table table-hover table-light">
+            <table class="table table-hover table-light table-striped">
                 <!--Titulo de tablas-->
                 <thead>
                     <tr>
@@ -173,10 +177,6 @@
                         <th scope="col">Total Factura</th>
                         <th scope="col">Tipo de pago</th>
                         <th scope="col">
-                            <button type="button" class="btn-agg">
-                                <ion-icon name="bag-add"></ion-icon>
-                            </button>
-                        </th>
                     </tr>
                 </thead>
                 <!--Informacion de tablas-->
@@ -226,6 +226,7 @@
                             </button>
                         <th>
                     </tr>
+
                 </tbody>
             </table>
             <div class="bordeinf">
