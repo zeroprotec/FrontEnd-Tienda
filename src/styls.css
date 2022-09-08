@@ -1,25 +1,28 @@
-html{
+html {
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
 }
-body{
+
+body {
     background-image: url(/Images/wallpaper_background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x:top;
-    top: -1000px;
+    background-position-x: top;
+    background-attachment: fixed;
 }
+
 /* Scroll Personalizado */
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 10px;
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background: #347AE2;
     border-radius: 20px;
 }
 
-.navbar{
+.navbar {
     background: transparent;
     font-family: 'Titillium Web', sans-serif;
     font-size: 25px;
@@ -27,21 +30,34 @@ body::-webkit-scrollbar-thumb{
     min-height: 100px;
     min-width: 100px;
 }
-.nav-link{
+
+.nav-link {
     position: relative;
     right: 15px;
     color: #fff;
 }
-.nav-link:hover{
-    color: rgb(255, 255, 255);
-}
-.navbar-text{
+
+.nav-link2 ol {
     position: relative;
-    left: 35%;
+    right: 1px;
+    top: -10px;
+    font-size: 15px;
+    background: none;
 }
 
-.sidebar{    
-    position:fixed;
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-text {
+    font-size: 23px;
+    position: relative;
+    top: 15px;
+    left: 10%;
+}
+
+.sidebar {
+    position: fixed;
     top: 0px;
     left: -10px;
     padding: 10px 0px;
@@ -52,12 +68,14 @@ body::-webkit-scrollbar-thumb{
     transition: all 0.5s ease;
     z-index: 3;
 }
-.sidebar.active{
+
+.sidebar.active {
     width: 240px;
 }
-.sidebar .logo_content .logo{
+
+.sidebar .logo_content .logo {
     position: relative;
-    display:flex;
+    display: flex;
     top: 35px;
     width: 100%;
     margin-left: 35px;
@@ -66,21 +84,26 @@ body::-webkit-scrollbar-thumb{
     opacity: 0;
     pointer-events: none;
 }
-.sidebar.active .logo_content .logo{
+
+.sidebar.active .logo_content .logo {
     opacity: 1;
 }
-.logo_content .logo .logo_sup{
+
+.logo_content .logo .logo_sup {
     font-size: 20px;
     margin-right: 10px;
 }
-.logo_content .logo .logo_name{
+
+.logo_content .logo .logo_name {
     font-size: 20px;
     font-weight: 400;
 }
-.logo{
+
+.logo {
     line-height: 10px;
 }
-.sidebar #btn{
+
+.sidebar #btn {
     position: absolute;
     color: #BFBFBF;
     left: 40%;
@@ -90,11 +113,13 @@ body::-webkit-scrollbar-thumb{
     width: 30px;
     text-align: center;
     transition: all 0.5s ease;
-} 
-.sidebar.active #btn{
+}
+
+.sidebar.active #btn {
     left: 82%;
 }
-.sidebar ul li{
+
+.sidebar ul li {
     font-size: 20px;
     height: 50px;
     position: relative;
@@ -104,11 +129,13 @@ body::-webkit-scrollbar-thumb{
     line-height: 50px;
     text-decoration: none;
 }
-.sidebar_footer{
+
+.sidebar_footer {
     position: relative;
     padding-top: 300px;
 }
-.sidebar ul li a{
+
+.sidebar ul li a {
     color: #fff;
     display: flex;
     align-items: center;
@@ -117,11 +144,13 @@ body::-webkit-scrollbar-thumb{
     border-radius: 12px;
     white-space: nowrap;
 }
-.sidebar ul li a:hover{
+
+.sidebar ul li a:hover {
     color: #ffff;
     background: rgb(166, 172, 211);
 }
-.sidebar ul li i{
+
+.sidebar ul li i {
     align-items: center;
     height: 50px;
     min-width: 45px;
@@ -129,19 +158,22 @@ body::-webkit-scrollbar-thumb{
     line-height: 55px;
     text-align: center;
 }
-.sidebar .link_n{
+
+.sidebar .link_n {
     opacity: 0;
-    pointer-events:none;
+    pointer-events: none;
 }
-.sidebar.active .link_n{
+
+.sidebar.active .link_n {
     opacity: 1;
-    pointer-events:auto;  
+    pointer-events: auto;
 }
+
 .sidebar ul li .tooltip_hs {
     position: absolute;
     left: 100px;
     top: 10%;
-    transform: translate(-20% ,-20%);
+    transform: translate(-20%, -20%);
     text-align: center;
     line-height: 35px;
     border-radius: 6px;
@@ -155,27 +187,30 @@ body::-webkit-scrollbar-thumb{
     pointer-events: none;
     display: block;
 }
-.sidebar.active ul li .tooltip_hs{
+
+.sidebar.active ul li .tooltip_hs {
     display: none;
 
 }
-.sidebar ul li:hover .tooltip_hs{
+
+.sidebar ul li:hover .tooltip_hs {
     transition: all 0.5s ease;
     opacity: 1;
     top: 40%;
 }
-.nav_item{
-    position: absolute;  
+
+.nav_item {
+    position: absolute;
     height: 100%;
     width: calc(100% - 140px);
     left: 150px;
     top: 20px;
     transition: all 0.5s ease;
-  }
+}
 
-#lateral{
+#lateral {
     padding-right: 10px;
-    padding-right:1px;
+    padding-right: 1px;
     align-items: center;
     height: 50px;
     min-width: 40px;
@@ -184,144 +219,159 @@ body::-webkit-scrollbar-thumb{
     text-align: center;
 }
 
-#arrow-down{
+#arrow-down {
     font-size: 20px;
     padding-top: 10px;
 }
-#menu-icon{
+
+#menu-icon {
     font-size: 30px;
 }
-#black-bell ,#icon-search {
+
+#black-bell,
+#icon-search {
     color: #0D0D0D;
     font-size: 22px;
     padding-top: 13px;
-    padding-right:35px;    
+    padding-right: 35px;
 }
-#profile{
+
+#profile {
     margin-top: 11px;
     margin-right: 15px;
     width: 30px;
     height: 30px;
     border-radius: 600px;
 }
-.navbar-toggler:focus{
+
+.navbar-toggler:focus {
     outline: none;
 }
-#head-1{
+
+#head-1 {
     position: relative;
     left: 615px;
     font-size: 13px;
     font-weight: 100;
     line-height: 6px;
 }
-.cards{
+
+/* Estilos contenido pagina  ⬇️*/
+
+.cards {
     position: relative;
     top: 50px;
     left: 30px;
 }
-.container-card{
+
+.container-card {
     position: relative;
     top: -140px;
 }
-.card{
+
+.card {
     width: 200px;
     height: 120px;
 }
 
-.card-body-1{
-box-sizing: border-box;
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 20px;
-gap: 3px;
-position:relative;
-width: 85rem;
-height: 132px;
-left: 300px;
-top: 12px;
-/* White */
-background: #BFBFBF;
-/* Border */
-border: 1px solid #E6EDFF;
-border-radius: 12px;
-}
-.divider-1{
-position: relative;
-top: -50px;
-left: -315px;
-width: 102px;
-height: 0px;
-/* Border */
-border: 1px solid #F2F2F2;
-transform: rotate(90deg);
-}
-.divider-2{
-position: relative;
-top: -205px;
-left: 20px;
-width: 102px;
-height: 0px;
-/* Border */
-border: 1px solid #F2F2F2;
-transform: rotate(90deg);
+.card-body-1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 3px;
+    position: relative;
+    width: 85rem;
+    height: 132px;
+    left: 300px;
+    top: 12px;
+    background: #ccccccb1;
+    box-shadow: 1px 0px 25px rgba(0, 0, 0, 0.292);
+    border-radius: 12px;
 }
 
-.divider-3{
-position: relative;
-top: -357px;
-left: 365px;
-width: 102px;
-height: 0px;
-/* Border */
-border: 1px solid #F2F2F2;
-transform: rotate(90deg);
+.divider-1 {
+    position: relative;
+    top: -50px;
+    left: -315px;
+    width: 102px;
+    height: 0px;
+    border: 1px solid #F2F2F2;
+    transform: rotate(90deg);
 }
-#card-1{
+
+.divider-2 {
+    position: relative;
+    top: -205px;
+    left: 20px;
+    width: 102px;
+    height: 0px;
+    border: 1px solid #F2F2F2;
+    transform: rotate(90deg);
+}
+
+.divider-3 {
+    position: relative;
+    top: -357px;
+    left: 365px;
+    width: 102px;
+    height: 0px;
+    border: 1px solid #F2F2F2;
+    transform: rotate(90deg);
+}
+
+#card-1 {
     background: transparent;
     box-sizing: border-box;
     top: 26px;
     left: 20%;
 
 }
-#card-2{
+
+#card-2 {
     position: relative;
     background: transparent;
     box-sizing: border-box;
     top: -128px;
     left: 37%
 }
-#card-3{
+
+#card-3 {
     position: relative;
     background: transparent;
     box-sizing: border-box;
     top: -280px;
     left: 55%;
 }
-#card-4{
+
+#card-4 {
     position: relative;
     background: transparent;
     box-sizing: border-box;
     top: -435px;
     left: 72%;
 }
-.card-text-1{
+
+.card-text-1 {
     color: #292929;
     position: relative;
     top: -15px;
     text-align: left;
 }
-.card-title{
+
+.card-title {
     position: relative;
     font-weight: 700;
     margin: 1px -5px;
 }
-.card-text{
+
+.card-text {
     position: relative;
     top: -40px;
 }
-.icon{
+
+.icon {
     color: #347AE2;
     position: relative;
     left: 130px;
@@ -329,63 +379,96 @@ transform: rotate(90deg);
     font-size: 24px;
     width: 34px;
     height: 35px;
-    /* Shadow */
     box-shadow: 1px 0px 10px rgba(124, 141, 181, 0.491);
     border-radius: 12px;
-    text-align:center;
+    text-align: center;
 }
-#icon-down{
+
+#icon-down {
     color: #D12830;
     font-size: 25px;
     top: -50px;
 }
-#icon-up{
+
+#icon-up {
     color: #4EC052;
     font-size: 25px;
-    top:-50px;
+    top: -50px;
 }
-#text-down{
+
+#text-down {
     position: relative;
     font-size: 18px;
     top: -55px;
     left: 10px;
 }
-.card-2{
-    background: #BFBFBF;
+
+.card-2 {
+    box-shadow: 1px 0px 25px rgba(0, 0, 0, 0.292);
+    background: #ccccccb1;
     position: relative;
     width: 1362px;
     height: 610px;
     top: -490px;
     left: 330px;
-    /* Border */
     border-radius: 12px;
 }
 
-#myChart{
+#myChart {
     position: relative;
     top: 50px;
     align-self: center;
 }
-#btn-chart{
+
+#btn-chart {
     position: relative;
-    top:60px;
+    top: 60px;
 }
-#btn-2{
+
+#btn-2 {
     width: 112px;
 }
-footer{ 
-    position: absolute;
+
+ /* Estilos tablas de datos */
+
+table {
+    position: relative;
+    bottom: -45px;
+}
+
+th {
+    font-size: 15px;
+}
+
+.text-1 {
+    position: relative;
+    top: 30px;
+}
+
+#table-2 {
+    position: relative;
+    left: 445px;
+}
+
+/* Pie de pagina Inica aqui */
+
+footer {
+    position: relative;
+    display: block;
+    bottom: -100px;
     left: 75px;
     height: 200px;
     width: 1835px;
     background: #292929;
 }
-.iconos-footer{
+
+.iconos-footer {
     top: 80px;
     position: relative;
     font-size: 30px;
 }
-.text-footer{
+
+.text-footer {
     color: #F2F2F2;
     top: 80px;
     position: relative;
@@ -394,23 +477,27 @@ footer{
 
 /* Clases Resposive */
 
-@media (max-width: 575.98px) { 
-    body{
+@media (max-width: 575.98px) {
+    body {
         width: 412px;
         height: 800px;
         background-size: 412px 800px;
     }
-    .navbar{
+
+    .navbar {
         min-width: 50px;
         min-height: 50px;
     }
-    .nav-link{
+
+    .nav-link {
         right: 1px;
     }
-    .navbar-text{
+
+    .navbar-text {
         left: 20%;
     }
-    .sidebar{
+
+    .sidebar {
         font-size: 10px;
         line-height: 10px;
     }
@@ -422,4 +509,3 @@ footer{
 @media (max-width: 991.98px) {}
 
 @media (max-width: 1199.98px) {}
-
