@@ -439,6 +439,15 @@ table {
 th {
     font-size: 15px;
 }
+.contenedor{
+    overflow: auto;
+}
+.contenedor ::-webkit-scrollbar{
+    width: 7px;
+}
+.contenedor::-webkit-scrollbar-thumb{
+    background: #000;
+}
 
 .text-1 {
     position: relative;
