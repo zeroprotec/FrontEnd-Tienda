@@ -134,3 +134,6 @@ a:link, a:visited, a:active {
     text-decoration:none;
     color: #0D8CDB;
 }
+btn_lg{
+    border: transparent;
+}

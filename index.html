@@ -9,6 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
     <!-- Hoja de estilos CSS -->
     <link rel="stylesheet" href="/src/styls.css">
+    <link rel="stylesheet" href="/src/search.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -17,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- icons Awesome -->
+    <script src="https://kit.fontawesome.com/241b032331.js" crossorigin="anonymous"></script>
     <title>Tienda Virtual</title>
 </head>
 
@@ -31,7 +35,14 @@
                         <ul class="navbar-nav ml-auto">
                             <li class="nav_item">
                                 <span class="navbar-text">Dashboard Administrador</span>
-                                <p id="head-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                            </li>
+                            <li class="nav-link2">
+                                <nav>
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                    </ol>
+                                </nav>
                             </li>
                         </ul>
                     </div>
@@ -40,12 +51,24 @@
             <div class="container" id="lateral">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item" id="icon-search">
-                            <ion-icon name="search-outline"></ion-icon>
-                        </li>
-                        <li class="nav-item" id="black-bell">
-                            <ion-icon name="notifications-sharp"></ion-icon>
-                        </li>
+                        <!-- Boton de busqueda -->
+                        <div class="search-box">
+                            <input class="search-txt" type="text" name="" placeholder="Buscar">
+                            <a class="search-btn" href="#">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <!-- <a href="#">
+                            <li class="nav-item" id="icon-search">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </li>
+                        </a> -->
+
+                        <a href="#">
+                            <li class="nav-item" id="black-bell">
+                                <ion-icon name="notifications-sharp"></ion-icon>
+                            </li>
+                        </a>
                         <li class="nav-item">
                             <a class="nav-item"><img src="/Images/profile.jpg" alt="" id="profile"></a>
                         </li>
@@ -67,7 +90,7 @@
         <div class="logo_content">
             <div class="logo">
                 <div class="logo_name" class="nav-link">
-                    Tienda Virtual
+                    <!-- <img src="/Images/logo-tienda-bg.png" alt=""> -->
                 </div>
             </div>
             <i>
@@ -150,7 +173,12 @@
         </div>
     </div>
     <br><br>
+
+    <!-- Contenido de pagina comienza aqui -->
+
+
     <!-- Secion datos -->
+
     <section class="cards">
         <div class="card-body-1"></div>
         <div class="container-card">
@@ -228,7 +256,9 @@
         </div>
     </section>
     <br><br><br><br><br>
+
     <!-- Graficos y Stats-->
+
     <div class="card-2" name="card2">
         <div class="card-body-2">
             <div class="container" id="contenedor">
@@ -245,22 +275,131 @@
         </div>
     </div>
     <br><br><br><br>
-    <div class="card-2">
-        <div class="card-body-2">
-            <div class="container text-center">               
-            </div>
+    <div class="row container-fluid ">
+        <div class="card-2 col-md-5 ">
+            <div class="card-body-2 container card_client overflow-hidden">
+                <table class="table table-Secondary table-hover table-striped">
+                    <div class="text-left text-1">
+                        <h5> Clientes </h5>
+                    </div>
+                    <div class="contenedor">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Vista</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td><a href="/pestañas_nav/clientes.html">
+                                        <button type="button" class="btn btn-info">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+                                    </a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td><a href="/pestañas_nav/clientes.html">
+                                        <button type="button" class="btn btn-info">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+                                    </a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td><a href="/pestañas_nav/clientes.html">
+                                        <button type="button" class="btn btn-info">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+                                    </a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td><a href="/pestañas_nav/clientes.html">
+                                        <button type="button" class="btn btn-info">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+                                    </a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td><button type="button" class="btn btn-info">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                                <td><a href="/pestañas_nav/clientes.html">
+                                        <button type="button" class="btn btn-info">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+                                    </a></td>
+                            </tr>
+                            <caption>List of users</caption>
+                        </tbody>
+                    </div>
+                </table>
         </div>
-
     </div>
+    <div class="card-2 col-3" id="table-2">
+        <div class="card-body-2 container">
+            <table class="table table-Secondary table-hover table-striped border-dark">
+                <div class="text-left text-1">
+                    <h5>Proveedores</h5>
+                </div>
 
+                <thead class="table-default">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col"> Vista </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td><a href="/pestañas_nav/proveedores.html">
+                                <button type="button" class="btn btn-info">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                            </a></td>
+                    </tr>
+                    <caption>List of users</caption>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
     <script>
         const ctx = document.getElementById('myChart');
         const myChart = new Chart(ctx, {
             type: 'bar',
             data: {
                 labels: ["enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
-                         "Octubre", "Noviembre", "Diciembre"
-                 ],
+                    "Octubre", "Noviembre", "Diciembre"
+                ],
                 datasets: [{
                     label: 'Compras',
                     data: [50, 60, 20, 30, 10, 100, 40, 25, 30, 70, 10, 90],
@@ -282,7 +421,7 @@
             }
         });
 
-        function changeChart(color,label,data) {
+        function changeChart(color, label, data) {
             myChart.data.datasets[0].backgroundColor = color;
             myChart.data.datasets[0].borderColor = color;
             myChart.data.datasets[0].label = label;
@@ -291,7 +430,7 @@
 
         }
     </script>
-
+    <!-- Inicio pie de pagina -->
     <footer>
         <div class="iconos-footer  container text-center">
             <a href="">
@@ -308,7 +447,7 @@
             </a>
         </div>
         <div class="text-footer container text-center">
-            <p>Tienda Virtual -Copyright all rights reservedt 2022</p>
+            <p>Tienda Virtual - <i class="fa-regular fa-copyright"></i> Copyright all rights reserved 2022</p>
         </div>
     </footer>
     <!-- Animaciones Sidebar script -->

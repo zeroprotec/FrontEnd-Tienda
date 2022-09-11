@@ -1,0 +1,34 @@
+.cont-1{
+    position: relative;
+    right: -325px;
+
+}
+
+.cont-1{
+    background: #bfbfbf;
+    width: 1500px;
+    height: 500px;
+    border-radius: 20px;
+    
+}
+
+.cont-2{
+    position: relative;
+    top: -440px;
+    right: -325px;
+    
+}
+
+.cont-2{
+    background: #fff;
+    width: 1500px;
+    height: 380px;
+}
+
+.card-bg{
+    position: relative;
+    height: auto;
+    top: -10px;
+    left: 1px;
+   
+}
