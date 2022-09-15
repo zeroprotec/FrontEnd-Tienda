@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="/src/css_pestañas/bajas.css">
     <!-- css sidebar -->
     <link rel="stylesheet" href="../src/styls.css">
-     <!-- Css Busqueda Nav -->
+    <!-- Css Busqueda Nav -->
     <link rel="stylesheet" href="/src/search.css">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -55,12 +55,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <!-- Boton de busqueda -->
-                            <div class="search-box">
-                                <input class="search-txt" type="text" name="" placeholder="Buscar">
-                                <a class="search-btn" href="#">
-                                    <ion-icon name="search-outline"></ion-icon>
-                                </a>
-                            </div>
+                        <div class="search-box">
+                            <input class="search-txt" type="text" name="" placeholder="Buscar">
+                            <a class="search-btn" href="#">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </a>
+                        </div>
                         <a href="#">
                             <li class="nav-item" id="black-bell">
                                 <ion-icon name="notifications-sharp"></ion-icon>
@@ -171,33 +171,33 @@
     </div>
     <br><br>
 
-    
+
     <!-- no modificar el codigo hacia arriba -->
-<!-- Contenido de pagina comienza aqui-->
+    <!-- Contenido de pagina comienza aqui-->
 
     <section>
-        <div class = "">
+        <div class="">
             <div class="cont-1">
                 <div class="search">
                     <div class="search-box-1">
                         <input class="search-txt" type="text" name="" placeholder="Buscar">
-                        <a class="search-btn" href="#">
+                        <a class="search-btns" href="#">
                             <ion-icon name="search-outline"></ion-icon>
                         </a>
                     </div>
-                    <div class="text-left text-1">
-                        <h3> Lista de Clientes </h3>
-                    </div>
+                </div>
+                <div class="text-list">
+                    <h3> Lista de Clientes </h3>
                 </div>
             </div>
-    <div class="cont-2"> 
-        <section class="table-client">
-            <div class="containers col-12 text-center card-bg table-responsive-sm">
-                <div class="row">
-                <table class="table col-12 table-hover table-bordeless">
-                   
-                   
-                    <!-- <div class="">
+            <div class="cont-2">
+                <section class="table-client">
+                    <div class="containers col-12 text-center card-bg table-responsive-sm">
+                        <div class="row">
+                            <table class="table col-12 table-hover table-bordeless">
+
+
+                                <!-- <div class="">
                         <div class="dropdown border-0 contenedor-1">
                             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               tipo
@@ -208,91 +208,91 @@
                             </ul>
                           </div>
                     </div> -->
-                   
-                    <div class="container">
-                        <caption class="text-1">Total de Filas</caption>
-                    <thead>
-                      <tr style="border-top:none;">
-                        <th scope="col">Codigo</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Categoria</th>
-                        <th scope="col">UM</th>
-                        <th scope="col">Costo Unitario</th>
-                        <th scope="col">Precio de Venta</th>
-                        <th scope="col">Fecha de vencimiento</th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Proveedor</th>
-                        <th scope="col">Estado</th>
-                        <th scope="col">Acction</th>
-                    
-                      </tr>
-                    </thead>
-                    <tbody style="border-top:none;">
-                      <tr style="border-top:none;">
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Aceite</td>
-                        <td>ML</td> 
-                        <td>6.400</td>
-                        <td>8.500</td>
-                        <td>28/02/2023</td>
-                        <td>15</td>
-                        <td>Distribuidor S.A</td>
-                        <td>En venta</td>
-                        <td><a>
-                            <button type="button" class="btn btn-warning">
-                                <ion-icon name="create-outline"></ion-icon>
-                            </button>
-                        </a>
-                        <a onclick="">
-                            <button type="button" class="btn btn-danger">
-                                <ion-icon name="trash-outline"></ion-icon>
-                            </button>
-                        </a>
-                        </td>
-                      </tr>
-                      <tr style="border-top:none;">
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Aceite</td>
-                        <td>ML</td> 
-                        <td>6.400</td>
-                        <td>8.500</td>
-                        <td>28/02/2023</td>
-                        <td>15</td>
-                        <td>Distribuidor S.A</td>
-                        <td>En venta</td>
-                        <td><a>
-                            <button type="button" class="btn btn-warning">
-                                <ion-icon name="create-outline"></ion-icon>
-                            </button>
-                        </a>
-                        <a onclick="">
-                            <button type="button" class="btn btn-danger">
-                                <ion-icon name="trash-outline"></ion-icon>
-                            </button>
-                        </a>
-                        </td>
-                      </tr>
-                      
-                    </tbody>
-                </div>
-                  </table>  
-                </div>
+
+                                <div class="container">
+                                    <caption class="text-1 align-bottom">Total de Filas</caption>
+                                    <thead>
+                                        <tr style="border-top:none;">
+                                            <th scope="col">Codigo</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Categoria</th>
+                                            <th scope="col">UM</th>
+                                            <th scope="col">Costo Unitario</th>
+                                            <th scope="col">Precio de Venta</th>
+                                            <th scope="col">Fecha de vencimiento</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Proveedor</th>
+                                            <th scope="col">Estado</th>
+                                            <th scope="col">Acction</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody style="border-top:none;">
+                                        <tr style="border-top:none;">
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Aceite</td>
+                                            <td>ML</td>
+                                            <td>6.400</td>
+                                            <td>8.500</td>
+                                            <td>28/02/2023</td>
+                                            <td>15</td>
+                                            <td>Distribuidor S.A</td>
+                                            <td>En venta</td>
+                                            <td><a>
+                                                    <button type="button" class="btn btn-warning">
+                                                        <ion-icon name="create-outline"></ion-icon>
+                                                    </button>
+                                                </a>
+                                                <a onclick="">
+                                                    <button type="button" class="btn btn-danger">
+                                                        <ion-icon name="trash-outline"></ion-icon>
+                                                    </button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr style="border-top:none;">
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Aceite</td>
+                                            <td>ML</td>
+                                            <td>6.400</td>
+                                            <td>8.500</td>
+                                            <td>28/02/2023</td>
+                                            <td>15</td>
+                                            <td>Distribuidor S.A</td>
+                                            <td>En venta</td>
+                                            <td><a>
+                                                    <button type="button" class="btn btn-warning">
+                                                        <ion-icon name="create-outline"></ion-icon>
+                                                    </button>
+                                                </a>
+                                                <a onclick="">
+                                                    <button type="button" class="btn btn-danger">
+                                                        <ion-icon name="trash-outline"></ion-icon>
+                                                    </button>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </div>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
             </div>
-        </section>
 
-    </div>
-                
 
-            
+
 
         </div>
     </section>
 
 
 
-  <!-- Inicio pie de pagina -->
+    <!-- Inicio pie de pagina -->
     <!-- <footer>
         <div class="iconos-footer  container text-center">
             <a href="">
