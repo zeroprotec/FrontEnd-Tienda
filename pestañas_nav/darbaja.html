@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Chart.js Graficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <!-- Hoja de estilos CSS -->
+    <link rel="stylesheet" href="/src/css_pestañas/darbaja.css">
+    <link rel="stylesheet" href="/src/search.css">
+    <!-- Estilos Sidebar y Navbar -->
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- icons Awesome -->
+    <script src="https://kit.fontawesome.com/241b032331.js" crossorigin="anonymous"></script>
+    <title>Tienda Virtual</title>
+</head>
+
+<body>
+    <header class="head">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container row col-sm-2">
+            </div>
+            <div class="container">
+                <nav class="navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav_item">
+                                <span class="navbar-text">Dar Baja</span>
+                            </li>
+                            <li class="nav-link2">
+                                <nav>
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item active"><a href="../index.html">Inicio</a></li>
+                                        <li class="breadcrumb-item" aria-current="page">Proveedores</li>
+                                    </ol>
+                                </nav>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="container" id="lateral">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Boton de busqueda -->
+                        <div class="search-box">
+                            <input class="search-txt" type="text" name="" placeholder="Buscar">
+                            <a class="search-btn" href="#">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <a href="#">
+                            <li class="nav-item" id="black-bell">
+                                <ion-icon name="notifications-sharp"></ion-icon>
+                            </li>
+                        </a>
+                        <li class="nav-item">
+                            <a class="nav-item"><img src="/Images/profile.jpg" alt="" id="profile"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Antonie Marcial</a>
+                        </li>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <div class="logo_name" class="nav-link">
+                    <!-- <img src="/Images/logo-tienda-bg.png" alt=""> -->
+                </div>
+            </div>
+            <i>
+                <ion-icon name="menu-outline" id="btn"></ion-icon>
+            </i>
+
+        </div>
+
+        <!-- Pestañas de Navegacion -->
+
+        <ul class="nav_list">
+            <li>
+                <a href="">
+                    <i>
+                        <ion-icon name="briefcase-outline"></ion-icon>
+                    </i>
+                    <span class="link_n">Productos</span>
+                </a>
+                <span class="tooltip_hs">Productos</span>
+            </li>
+            <li>
+                <a href="">
+                    <i>
+                        <ion-icon name="newspaper-outline"></ion-icon>
+                    </i>
+                    <span class="link_n">Proveedores</span>
+                </a>
+                <span class="tooltip_hs">Proveedores</span>
+            </li>
+            <li>
+                <a href="/pestañas_nav/clientes.html">
+                    <i>
+                        <ion-icon name="person-outline"></ion-icon>
+                    </i>
+                    <span class="link_n">Clientes</span>
+                </a>
+                <span class="tooltip_hs">Clientes</span>
+            </li>
+            <li>
+                <a href="/pestañas_nav/configuracion.html">
+                    <i>
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </i>
+                    <span class="link_n">Configuracion</span>
+                </a>
+                <span class="tooltip_hs">Configuracion</span>
+            </li>
+        </ul>
+        <br>
+        <div class="sidebar_footer">
+            <ul class="nav_list">
+                <li>
+                    <a href="">
+                        <i>
+                            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                        </i>
+                        <span class="link_n">Contacto</span>
+                    </a>
+                    <span class="tooltip_hs">Contacto</span>
+                </li>
+                <li>
+                    <a href="">
+                        <i>
+                            <ion-icon name="help-circle-outline"></ion-icon>
+                        </i>
+                        <span class="link_n">Ayuda</span>
+                    </a>
+                    <span class="tooltip_hs">Ayuda</span>
+                </li>
+                <li>
+                    <a href="/login.html">
+                        <i>
+                            <ion-icon name="log-out-outline" id="logo_out"></ion-icon>
+                        </i>
+                        <span class="link_n">Salir</span>
+                    </a>
+                    <span class="tooltip_hs">Salir</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+
+    <!-- no modificar el codigo hacia arriba -->
+    <!-- Contenido de pagina comienza aqui-->
+    <section class="darbaja">
+        <div class="container">
+            <div class="cont1">
+                <h3 class="title1">Baja</h3>
+                <div class="cont2">
+                    <div class="cont3 container">
+                        <div>
+                            <h5>Nombre Arroz Diana Premium x 500gr</h5><br>
+                            <ul class="input_group">
+                                <div class="input-group mb-lg-4">
+                                    <li>
+                                        <p class="subtext">Cantidad</p>
+                                        <input class="cant" type="text" placeholder="Ingrese una Cantidad">
+                                    </li>
+                                </div>
+                                <div class="input-group mb-lg-4">
+                                    <li>
+                                        <p class="subtext">Fecha</p>
+                                        <input type="date" class="date">
+                                    </li>
+                                </div>
+                                <div class="input-group mb-lg-3"></div>
+                                <li>
+                                    <p class="subtext">Motivo</p>
+                                    <textarea class="motive" rows="4" cols="40px"
+                                        placeholder="Ingrese el Motivo"></textarea>
+                                </li>
+                        </div>
+                        </ul>
+                        <button type="button" class="remove">
+                            <ion-icon name="remove-circle-outline" size="large"></ion-icon>Dar Baja
+                        </button>
+                        <button type="button" class="cancel">
+                            <ion-icon name="close-circle-outline" size="large"></ion-icon>Cancelar
+                        </button>
+
+                    </div>
+                    <div class="info">
+                        <div class="container-info">
+                        <h3 class="title2">De Interes</h3><br>
+                    <div class="subtext-1">
+                        <p>En esta sección podrás registrar acerca de la baja del producto.</p>
+                        <p>Cantidad: Registra el número de productos que vas a retirar del inventario, por ejemplo, si
+                            registras 50, es porque los productos no existirán dentro de tu negocio.</p>
+                        <p>Motivo: Explica brevemente el motivo por el que le das baja a tu producto. </p>
+                    </div>
+                    <div class="image-1">
+                        <img class="img-1" src="/Images/img-info-removebg.png" alt="">
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Inicio pie de pagina -->
+    <footer>
+        <div class="iconos-footer  container text-center">
+            <a href="">
+                <ion-icon name="logo-twitter"> </ion-icon>
+            </a>
+            <a href="">
+                <ion-icon name="logo-facebook"> </ion-icon>
+            </a>
+            <a href="">
+                <ion-icon name="logo-gitlab"> </ion-icon>
+            </a>
+            <a href="">
+                <ion-icon name="logo-instagram"> </ion-icon>
+            </a>
+        </div>
+        <div class="text-footer container text-center">
+            <p>Tienda Virtual - <i class="fa-regular fa-copyright"></i> Copyright all rights reserved 2022</p>
+        </div>
+    </footer>
+    <!-- Animaciones Sidebar script -->
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function () {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+    <!-- Boostrap 4 Requerimientos-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-- Iconos -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
