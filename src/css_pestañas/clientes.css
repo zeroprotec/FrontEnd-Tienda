@@ -275,6 +275,7 @@ thead{
 .table-responsive::-webkit-scrollbar-thumb{
     border-radius: 10px;
     background: #0D0D0D;
+    
 }
 .containers{
     padding-top: 20px;

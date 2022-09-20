@@ -32,3 +32,61 @@
     left: 1px;
    
 }
+.text-list{
+    position: relative;
+    left: 25px;
+    top: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.search{
+    position: relative;
+    top: -22px;
+    right: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.search-box-1{
+    position: absolute;
+    top: 52px;
+    left: 1410px;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px 50px;
+
+}
+.search-box-1 > .search-txt{
+    position: relative;
+    width: 240px;
+    padding: 0px 15px;
+    top: -10px;
+}
+.search-box-1 > .search-btn-2{
+   background: white;
+}
+.search-txt{
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding: 0;
+ color: black;
+ font-size: 16px;
+ transition: 0.5s;   
+ line-height: 40px;
+ width: 0px;
+}
+.search-btns{
+    position: relative;
+    display: flex;
+    top: 12px;
+    right: -10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: #000;
+}
