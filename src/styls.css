@@ -490,12 +490,12 @@ footer {
     body {
         width: 412px;
         height: 800px;
-        background-size: 412px 800px;
     }
 
     .navbar {
-        min-width: 50px;
-        min-height: 50px;
+        width: 20px;
+        height: 20px;
+        position: relative;
     }
 
     .nav-link {
@@ -507,13 +507,19 @@ footer {
     }
 
     .sidebar {
-        font-size: 10px;
-        line-height: 10px;
+        font-size: 2px;
+        line-height: 100px;
     }
 
 }
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .navbar {
+        width: 50px;
+        height: 50px;
+    }
+
+}
 
 @media (max-width: 991.98px) {}
 
