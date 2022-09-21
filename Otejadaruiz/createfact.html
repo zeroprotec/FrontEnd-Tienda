@@ -155,6 +155,7 @@
 
     <!--Contenido-->   
     <!-- Cliente y Datos Facura-->
+        <!-- Cliente y Datos Facura-->
         <div id="contenedor">
             <div class="cliente">
                 <div class="datocliente">
@@ -211,15 +212,33 @@
                     </div>
                 </div>
                 <form name="form_general" id="form_general" class="datos">
-                    <div>
-                        <label>Fecha</label>
-                        <input type="date" name="fecha_fact" id="fecha_fact" placeholder=" " required>
+                    <div class="row m-2">
+                        <div class="col-1">
+                            <label>Fecha</label>
+                        </div>
+                        <div >
+                            <input type="date" name="fecha_fact" id="fecha_fact" placeholder=" " required>
+                        </div>
                     </div>
-                    <div>
-                        <label>Tipo de pago</label>
-                        <input type="text" name="tipopago" id="tipopago" placeholder=" " required>
+                    <div class="row m-2">
+                        <div class="col-0">
+                            <label>Cliente</label>
+                        </div>
+                        <div class="">
+                            <input type="text" >
+                        </div>
+                        <div class="col-1.5" >
+                            <label>Tipo de pago</label>
+                        </div>
+                        <div>
+                            <select class="form-control" required>
+                                <option>Contado</option>
+                                <option>Credito</option>
+                            </select>
+                        </div>
                     </div>
-                    <div>
+                <div>
+                    <div class="row m-2">
                         <label>Total</label>
                         <input type="text" name="valorTfact" id="valorTfact" placeholder=" " required>
                     </div>
@@ -227,6 +246,17 @@
                         <button type="submit" class="btnsave">
                             <ion-icon name="save"></ion-icon>
                         </button>
+                    <div class="row">
+                        <div class="col-6 text-end">
+                        <a href="../Otejadaruiz/listVentas.html">
+                            <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                        </a>
+                        </div>
+                        <div id="btnguardarFact" class="col-6">
+                            <button type="submit" class="btnsave">
+                                <ion-icon name="save"></ion-icon>
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -268,8 +298,9 @@
             <tbody id="detalleFact">
                 <tr>
                     <td>1</td>
-                    <td colspan="2">Arroz Diana Premium x 500 gr</td>
-                    <td class="textcenter">1</td>
+                    <td>Arroz Diana Premium x 500 gr</td>
+                    <td>30</td>
+                    <td>1</td>
                     <td class="textright">100.000,00</td>
                     <td class="textright">100.000,00</td>
                     <td class="">

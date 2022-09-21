@@ -226,14 +226,14 @@ body::-webkit-scrollbar-thumb{
     width: 58%;
     background-color: #fff;
     border-radius: 15px;
-    float: left;
     margin: 5px;
 }
 .factura{
     width: 38%;
     height: 335px;
+    width: 60%;
+    margin: auto auto;
     background-color: #fff;
-    float: right;
     border-radius: 15px;
     margin: 5px;
 }
@@ -241,6 +241,7 @@ body::-webkit-scrollbar-thumb{
 .datos{
     background-color: #fff;
     width: 80%;
+    width: 100%;
     margin: auto;
     border-radius: 30px;
     border: #eeab00;
@@ -279,7 +280,7 @@ body::-webkit-scrollbar-thumb{
 
 .tbventa{
     background-color: #fff;
-	width: 80%;
+	width: 100%;
     max-width: 1600px;
     border-radius: 5px;
 	margin: 20px auto;
@@ -307,7 +308,14 @@ body::-webkit-scrollbar-thumb{
 #botonesform{
     width: 50%;
     margin: 0px auto;
+    display: none;
 }
+
+#btnguardarFact{
+    width: 50%;
+    margin: 0px auto;
+}
+
 .btnsave{
     display: inline-block;
     background-color: #eeab00;
